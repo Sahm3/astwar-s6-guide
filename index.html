@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101b17">
+<title>دليل الموسم السادس | Last War</title>
+<style>
+:root{--bg:#0b120f;--panel:#121e19;--panel2:#172820;--line:#294638;--green:#a6e36b;--mint:#d6f5b7;--muted:#9bb1a2;--text:#eff8f0;--gold:#e7c77a;--red:#ed927d}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% -10%,#294d37 0,transparent 38%),linear-gradient(180deg,#0b120f,#101a15 60%,#0b120f);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Tahoma,Arial,sans-serif;line-height:1.7}
+a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}button{cursor:pointer}
+header{position:sticky;top:0;z-index:20;background:#0b120feF;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{max-width:1180px;margin:auto;padding:12px 20px;display:flex;align-items:center;gap:16px}.brand{font-weight:900;letter-spacing:.5px;color:var(--green);white-space:nowrap}.navlinks{display:flex;gap:6px;overflow:auto;flex:1}.navlinks a,.navlinks button{border:0;background:transparent;color:#c3d3c8;padding:8px 11px;border-radius:10px;white-space:nowrap;font-size:14px}.navlinks a:hover,.navlinks button:hover,.navlinks .active{background:#20372a;color:var(--mint)}.lang{border:1px solid var(--line);background:var(--panel);color:var(--text);padding:7px 10px;border-radius:10px}
+main{max-width:1180px;margin:auto;padding:30px 20px 70px}.hero{position:relative;overflow:hidden;border:1px solid #3d6549;border-radius:24px;padding:clamp(26px,5vw,58px);background:linear-gradient(115deg,#15291fF2,#102019E8 55%,#1c3926D9),radial-gradient(circle at 15% 20%,#a6e36b55,transparent 35%);box-shadow:0 24px 70px #0006}
+.hero:after{content:"";position:absolute;inset:auto -60px -160px auto;width:420px;height:420px;border:1px solid #a6e36b35;border-radius:50%;box-shadow:0 0 0 35px #a6e36b09,0 0 0 75px #a6e36b08}
+.eyebrow{color:var(--green);font-size:12px;font-weight:800;letter-spacing:2px}.hero h1{font-size:clamp(30px,5vw,56px);line-height:1.15;margin:12px 0;max-width:760px}.hero p{color:#c1d4c6;max-width:700px;margin:0 0 22px}.actions{display:flex;flex-wrap:wrap;gap:10px}.btn{border:1px solid var(--line);background:#20372a;color:var(--mint);padding:10px 16px;border-radius:12px;font-weight:750}.btn.primary{background:var(--green);color:#132016;border-color:var(--green)}.btn:hover{filter:brightness(1.1);transform:translateY(-1px)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:16px 0 34px}.stat,.card{background:linear-gradient(145deg,#17251e,#101a15);border:1px solid var(--line);border-radius:17px;padding:17px}.stat b{display:block;font-size:24px;color:var(--green)}.stat span{font-size:13px;color:var(--muted)}
+section{scroll-margin-top:90px;margin:34px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:12px;margin-bottom:14px}.section-head h2{font-size:25px;margin:0}.section-head p{margin:2px 0 0;color:var(--muted);font-size:14px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.card h3{margin:4px 0 7px;font-size:17px}.card p{margin:0;color:var(--muted);font-size:14px}.tag{display:inline-block;color:var(--green);font-size:11px;font-weight:800;border:1px solid #3b5e45;background:#1b3022;padding:3px 8px;border-radius:99px}.card .arrow{color:var(--green);float:left}
+.week-wrap{display:grid;grid-template-columns:220px 1fr;gap:14px}.week-list{display:grid;gap:7px;align-content:start}.week-btn{background:#132019;border:1px solid var(--line);color:#c9d8cd;text-align:right;padding:10px 13px;border-radius:11px}.week-btn.active{background:#294531;color:var(--mint);border-color:#7caf5b}.week-content{min-height:270px}.week-content ul{padding-right:22px;color:#c8d8cc}.note{border-right:3px solid var(--gold);background:#332d1c55;padding:10px 13px;border-radius:8px;color:#e8d9ad;font-size:13px}
+.checklist{display:grid;gap:8px}.task{display:flex;align-items:flex-start;gap:10px;background:#14221a;border:1px solid var(--line);padding:11px 13px;border-radius:11px}.task input{accent-color:var(--green);width:18px;height:18px;margin-top:5px}.task.done span{text-decoration:line-through;color:#82978a}.progress{height:9px;background:#25372c;border-radius:20px;overflow:hidden;margin:10px 0}.progress>i{display:block;height:100%;background:linear-gradient(90deg,#78b84d,#c3ef83);width:0;transition:.2s}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}.field{background:#0d1711;border:1px solid var(--line);color:var(--text);border-radius:10px;padding:10px 12px;min-width:0}.search{flex:1;min-width:200px}.reference-list{display:grid;grid-template-columns:repeat(2,1fr);gap:9px}.ref-item{background:#14221a;border:1px solid var(--line);padding:12px;border-radius:11px}.ref-item b{color:var(--mint)}.ref-item small{display:block;color:var(--muted);margin-top:3px}
+.calc{display:grid;grid-template-columns:1fr 1fr;gap:14px}.result{background:#20372a;border:1px solid #527849;border-radius:14px;padding:18px}.result strong{display:block;font-size:30px;color:var(--green)}
+footer{border-top:1px solid var(--line);padding:24px 20px;color:var(--muted);text-align:center;font-size:13px}
+.modal{display:none;position:fixed;inset:0;background:#000b;z-index:50;align-items:center;justify-content:center;padding:20px}.modal.open{display:flex}.modalbox{max-width:540px;width:100%;background:#14221a;border:1px solid var(--line);border-radius:18px;padding:22px}.modalbox textarea{width:100%;min-height:110px}
+.empty{color:var(--muted);padding:18px;text-align:center;border:1px dashed var(--line);border-radius:12px}
+@media(max-width:760px){.nav{flex-wrap:wrap}.navlinks{order:3;width:100%;flex-basis:100%}.stats{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr}.week-wrap{grid-template-columns:1fr}.week-list{grid-template-columns:repeat(4,1fr)}.week-btn{text-align:center;padding:8px 3px;font-size:12px}.calc{grid-template-columns:1fr}.reference-list{grid-template-columns:1fr}.section-head{align-items:start;flex-direction:column}}
+</style>
+</head>
+<body>
+<header><nav class="nav">
+<a class="brand" href="#home">✧ LAST WAR S6</a>
+<div class="navlinks">
+<a href="#home">البداية</a><a href="#weeks">خطة الأسابيع</a><a href="#daily">مهام اليوم</a><a href="#reference">مرجع اللعبة</a><a href="#leadership">دليل القيادة</a><a href="#media">الصور والمصادر</a>
+</div><button class="lang" id="langBtn">EN</button>
+</nav></header>
+<main>
+<div class="hero" id="home">
+<div class="eyebrow">LAST WAR: SURVIVAL · SEASON 6</div>
+<h1>دليل الموسم السادس<br><span style="color:var(--green)">الغابة المطيرة المفقودة</span></h1>
+<p>مرجع عملي للاعبين وقيادات التحالف: استعد قبل البداية، تابع خطة كل أسبوع، ونظّم مهامك اليومية. هذا الإصدار قالب أولي قابل للتحديث بمعلومات سيرفرك.</p>
+<div class="actions"><a class="btn primary" href="#weeks">ابدأ خطة الموسم ←</a><a class="btn" href="#daily">مهام اليوم</a><button class="btn" onclick="openEditor()">✎ تخصيص بيانات السيرفر</button></div>
+</div>
+<div class="stats">
+<div class="stat"><b>2</b><span>أسبوعا التحضير · عدّل حسب تقويمك</span></div><div class="stat"><b>8</b><span>أسابيع الموسم</span></div><div class="stat"><b>4 v 4</b><span>حرب الفصائل · تحقق من إعدادات الموسم</span></div><div class="stat"><b id="doneStat">0%</b><span>إنجاز قائمة اليوم</span></div>
+</div>
+<section>
+<div class="section-head"><div><h2>من وين أبدأ؟</h2><p>ثلاث خطوات تأسيسية قبل التعمق في تفاصيل الموسم</p></div></div>
+<div class="grid">
+<a class="card" href="#weeks"><span class="tag">قبل الموسم</span><h3>جهّز مواردك <span class="arrow">↗</span></h3><p>راجع مخزون التسريعات والموارد، وحدد أولويات التطوير قبل فتح الموسم.</p></a>
+<a class="card" href="#weeks"><span class="tag">أول الأيام</span><h3>ابدأ التطوير <span class="arrow">↗</span></h3><p>تابع المباني والأنظمة الجديدة ومقاومة الفيروس وفق متطلبات اللعبة.</p></a>
+<a class="card" href="#daily"><span class="tag">كل يوم</span><h3>لا تفوّت المهام <span class="arrow">↗</span></h3><p>استخدم قائمة اليوم لتسجيل المهام ومتابعة مساهمتك.</p></a>
+</div>
+</section>
+<section id="weeks">
+<div class="section-head"><div><h2>خطة الموسم أسبوعًا بأسبوع</h2><p>اختر الأسبوع لعرض الأهداف والمهام. التفاصيل الحالية نقاط تحريرية أولية وليست جدول فتح رسميًا.</p></div></div>
+<div class="week-wrap"><div class="week-list" id="weekList"></div><div class="card week-content" id="weekContent" aria-live="polite"></div></div>
+<div class="note" style="margin-top:12px">مهم: تختلف مواعيد الفتح وبعض المتطلبات حسب نسخة الموسم وتقويم السيرفر. اعتمد عدّاد اللعبة وإعلانات القيادة قبل أي حرب أو ترقية مرتبطة بموعد.</div>
+</section>
+<section id="daily">
+<div class="section-head"><div><h2>مهام اليوم</h2><p>تُحفظ العلامات على هذا الجهاز والمتصفح.</p></div><button class="btn" onclick="resetTasks()">يوم جديد ↻</button></div>
+<div class="card"><div style="display:flex;justify-content:space-between;gap:10px"><b>تقدمك اليوم</b><span id="progressText" style="color:var(--green)">0 / 8</span></div><div class="progress"><i id="progressBar"></i></div><div class="checklist" id="tasks"></div></div>
+</section>
+<section id="leadership">
+<div class="section-head"><div><h2>أدوات القيادة والتحالف</h2><p>حاسبات وتنسيق مبدئي لمجموعات R4 وR5.</p></div></div>
+<div class="grid">
+<div class="card"><span class="tag">تنظيم</span><h3>قبل الفعالية</h3><p>حدّد مسؤول النداء، وقت التجمع، أهداف الهجوم والدفاع، وخطة الاحتياط.</p></div>
+<div class="card"><span class="tag">تنسيق</span><h3>توزيع الأدوار</h3><p>قسّم المشاركين إلى مجموعات واضحة، وعيّن قائدًا لكل مجموعة وقناة تواصل.</p></div>
+<div class="card"><span class="tag">مراجعة</span><h3>بعد الفعالية</h3><p>سجّل النتائج، الحضور، الأخطاء، وما يجب تغييره في الأسبوع القادم.</p></div>
+</div>
+<div class="card" style="margin-top:14px"><h3>حاسبة نقاط التحصين</h3><p style="margin-bottom:12px">أدخل عدد اللاعبين وعدد الإرسالات المؤهلة لكل لاعب. غيّر قيمة النقاط حسب القاعدة المؤكدة في سيرفرك.</p>
+<div class="calc"><div><label>عدد اللاعبين</label><input class="field" id="players" type="number" min="0" value="20" style="width:100%;margin:6px 0 12px"><label>الإرسالات لكل لاعب (حد أقصى 5)</label><input class="field" id="flights" type="number" min="0" max="5" value="5" style="width:100%;margin:6px 0 12px"><label>النقاط لكل إرسال</label><input class="field" id="points" type="number" min="0" value="1500" style="width:100%;margin:6px 0 12px"></div>
+<div class="result"><span>إجمالي نقاط الفريق التقديري</span><strong id="total">150,000</strong><small style="color:#c5d9c8">اللاعب الواحد: <b id="perPlayer">7,500</b></small></div></div></div>
+</section>
+<section id="reference">
+<div class="section-head"><div><h2>مرجع اللعبة</h2><p>ابحث في المصطلحات والأنظمة المضافة إلى هذا الدليل.</p></div></div>
+<div class="toolbar"><input id="search" class="field search" placeholder="ابحث باسم نظام أو حدث..."><select id="category" class="field"><option value="all">كل التصنيفات</option><option value="season">الموسم</option><option value="battle">القتال</option><option value="alliance">التحالف</option></select></div>
+<div class="reference-list" id="referenceList"></div>
+</section>
+<section id="media">
+<div class="section-head"><div><h2>الصور والمصادر</h2><p>مساحة مخصصة لإضافة لقطات اللعبة والروابط الرسمية وأدلة المجتمع.</p></div><button class="btn" onclick="openEditor()">إضافة ملاحظة</button></div>
+<div class="grid"><div class="card"><span class="tag">صور</span><h3>مباني الموسم</h3><p>أضف صور المباني والموارد مع شرح مختصر لكل صورة.</p></div><div class="card"><span class="tag">شرح</span><h3>خطوات التطوير</h3><p>رتّب صور الشرح حسب الأولوية والتسلسل الصحيح.</p></div><div class="card"><span class="tag">مصادر</span><h3>مراجع موثوقة</h3><p>أضف روابط اللعبة والمصادر التي راجعتها القيادة.</p></div></div>
+</section>
+</main>
+<footer>
+  <strong style="display:block;color:var(--green);font-size:22px;letter-spacing:2px">SAHM 3 · 1302</strong>
+  <span style="font-size:11px;letter-spacing:2px">LAST WAR · SEASON 6</span>
+</footer>
+<div class="modal" id="editor"><div class="modalbox"><div style="display:flex;justify-content:space-between;align-items:center"><h3>تخصيص بيانات الدليل</h3><button class="btn" onclick="closeEditor()">✕</button></div><p style="color:var(--muted)">اكتب اسم السيرفر أو ملاحظة القيادة. تُحفظ محليًا على جهازك في هذه النسخة.</p><input class="field" id="serverName" placeholder="اسم السيرفر / التحالف" style="width:100%;margin-bottom:10px"><textarea class="field" id="serverNote" placeholder="ملاحظات الموسم..."></textarea><div class="actions" style="margin-top:12px"><button class="btn primary" onclick="saveEditor()">حفظ</button></div></div></div>
+<script>
+const weeks=[
+["التحضير 1","الاستعداد وتقييم الحساب",["راجع موارد البناء والبحث والتدريب والتسريعات المتاحة.","حدد أولوية الأبطال والتشكيلة الأساسية قبل بداية الموسم.","اتفق مع التحالف على أوقات النشاط وقنوات الإعلانات."]],
+["التحضير 2","التجهيز النهائي",["أكمل المهام اليومية التي تدعم مخزونك.","راجع متطلبات الموسم داخل اللعبة ولا تصرف العناصر النادرة عشوائيًا.","جهّز خطة توزيع الأدوار للمجموعات."]],
+["الأسبوع 1","الانطلاقة وفهم الأنظمة",["افتح واجهة الموسم واقرأ شروط الأنظمة الجديدة.","حدد مسار التطوير الأول وفق الموارد المتاحة.","شارك القيادة بأي متطلبات أو مواعيد غير واضحة."]],
+["الأسبوع 2","رفع الكفاءة",["وازن بين تطوير المباني وجمع الموارد.","تابع المهام المحدودة بوقت ولا تؤجل ما يفوت.","راجع ترتيب التحالف وأهداف الأسبوع."]],
+["الأسبوع 3","التوسع والتنسيق",["نسّق تحركات الأعضاء حسب توجيهات القيادة.","راجع تشكيلات القتال ونقاط القوة والضعف.","احتفظ باحتياطي موارد للفعاليات القادمة."]],
+["الأسبوع 4","منتصف الموسم",["قيّم تقدم الحساب مقارنة بأهدافك.","حدّث خطة التطوير بناءً على ما فُتح فعليًا.","راجع حضور الأعضاء وتوزيع الأدوار."]],
+["الأسبوع 5","الاستعداد للمواجهات",["تابع إعلانات الحرب وتوقيتاتها من داخل اللعبة.","حدّد فرق الهجوم والدفاع والاحتياط.","تأكد من فهم قواعد النقاط وشروط المشاركة."]],
+["الأسبوع 6","تنفيذ الخطة",["التزم بتوقيت التجمع والنداءات.","وثّق النتائج والملاحظات بعد كل فعالية.","عدّل توزيع الفرق وفق الأداء الفعلي."]],
+["الأسبوع 7","إدارة الموارد والنتائج",["راجع الموارد المتبقية وأولويات الصرف.","تابع تقدم التحالف نحو أهدافه النهائية.","استعد للفعاليات الختامية وفق التقويم."]],
+["الأسبوع 8","ختام الموسم",["تحقق من شروط الجوائز والتسوية داخل اللعبة.","أكمل المهام التي ما زالت متاحة قبل الإغلاق.","سجّل الدروس المستفادة للموسم القادم."]]
+];
+const refs=[
+["مقاومة الفيروس","الموسم","تابع طريقة رفعها ومتطلباتها من واجهة الموسم ومبانيه."],
+["مصانع الأبواغ","الموسم","مصدر مرتبط بتقدم الموسم؛ أضف هنا مستويات الإنتاج والتطوير المؤكدة."],
+["معهد الفطريات","الموسم","أضف متطلبات الترقية وتأثيرها بعد التحقق داخل اللعبة."],
+["حرب الفصائل","battle","راجع توقيت الحرب، قواعد التسجيل، وشروط احتساب النقاط."],
+["تحصين المدينة","alliance","نسّق التفعيل والإرسالات مع القيادة وتأكد من شروط الأهلية."],
+["معبد الأجداد","battle","أضف هنا خطة السيرفر وأوقات التحرك وتوزيع الفرق."]
+];
+const taskNames=["استلام الهدايا والمهام اليومية","جمع موارد الموسم","تفقد مصانع/مباني الموسم","تطوير الأولوية المحددة","المشاركة في تبرعات أو أنشطة التحالف","مراجعة فعاليات اليوم ومواعيدها","التأكد من إعدادات الحماية قبل الخروج","متابعة إعلان القيادة"];
+let selected=0;
+function renderWeeks(){document.getElementById('weekList').innerHTML=weeks.map((w,i)=>`<button class="week-btn ${i===selected?'active':''}" onclick="selectWeek(${i})">${i<2?'التحضير':`الأسبوع ${i-1}`}</button>`).join('');let w=weeks[selected];document.getElementById('weekContent').innerHTML=`<span class="tag">${w[0]}</span><h3 style="font-size:22px">${w[1]}</h3><ul>${w[2].map(x=>`<li>${x}</li>`).join('')}</ul><p class="note">هذه خطة تنظيمية عامة. أضف مواعيد الفتح والمهام الخاصة بسيرفرك بعد تأكيدها من اللعبة.</p>`}
+function selectWeek(i){selected=i;renderWeeks()}
+function getChecks(){try{return JSON.parse(localStorage.getItem('lw_s6_tasks')||'{}')}catch(e){return {}}}
+function renderTasks(){let c=getChecks();document.getElementById('tasks').innerHTML=taskNames.map((t,i)=>`<label class="task ${c[i]?'done':''}"><input type="checkbox" ${c[i]?'checked':''} onchange="toggleTask(${i},this.checked)"><span>${t}</span></label>`).join('');let n=Object.values(c).filter(Boolean).length,p=Math.round(n/taskNames.length*100);document.getElementById('progressText').textContent=`${n} / ${taskNames.length}`;document.getElementById('progressBar').style.width=p+'%';document.getElementById('doneStat').textContent=p+'%'}
+function toggleTask(i,v){let c=getChecks();c[i]=v;localStorage.setItem('lw_s6_tasks',JSON.stringify(c));renderTasks()}
+function resetTasks(){if(confirm('بدء قائمة يوم جديد؟')){localStorage.removeItem('lw_s6_tasks');renderTasks()}}
+function renderRefs(){let q=document.getElementById('search').value.trim().toLowerCase(),cat=document.getElementById('category').value;let arr=refs.filter(r=>(cat==='all'||r[1]===cat)&&(r[0].toLowerCase().includes(q)||r[2].toLowerCase().includes(q)));document.getElementById('referenceList').innerHTML=arr.length?arr.map(r=>`<div class="ref-item"><b>${r[0]}</b><small>${r[2]}</small></div>`).join(''):'<div class="empty">ما حصلت نتيجة. جرّب كلمة أخرى.</div>'}
+function calc(){let p=Math.max(0,+document.getElementById('players').value||0),f=Math.min(5,Math.max(0,+document.getElementById('flights').value||0)),v=Math.max(0,+document.getElementById('points').value||0);document.getElementById('perPlayer').textContent=(f*v).toLocaleString('en-US');document.getElementById('total').textContent=(p*f*v).toLocaleString('en-US')}
+function openEditor(){document.getElementById('editor').classList.add('open');document.getElementById('serverName').value=localStorage.getItem('lw_s6_name')||'';document.getElementById('serverNote').value=localStorage.getItem('lw_s6_note')||''}
+function closeEditor(){document.getElementById('editor').classList.remove('open')}
+function saveEditor(){localStorage.setItem('lw_s6_name',document.getElementById('serverName').value);localStorage.setItem('lw_s6_note',document.getElementById('serverNote').value);alert('تم الحفظ على هذا الجهاز.');closeEditor()}
+document.getElementById('search').addEventListener('input',renderRefs);document.getElementById('category').addEventListener('change',renderRefs);['players','flights','points'].forEach(id=>document.getElementById(id).addEventListener('input',calc));
+renderWeeks();renderTasks();renderRefs();calc();
+</script>
+</body></html>
